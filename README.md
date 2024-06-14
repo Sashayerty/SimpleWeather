@@ -30,6 +30,6 @@ SIMPLEWEATHER/
 # Назначение и использование файлов:
 Расскажу только про 2 файла:
 - main.py
-- simple_weather_console.py
+- console_v.py
 ## main.py - основная программа с UI
 ## simple_weather_console.py - консольная программа
