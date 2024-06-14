@@ -48,9 +48,12 @@ class SimpleWeatherWindow(QMainWindow):
     def updater(self):
         with open("place.json", "r") as data:
             self.place_in_file = json.load(data)
-            self.data = get('+'.join(self.place_in_file["place"].split()))
-            self.place.setPlaceholderText(self.place_in_file["place"])
-            self.Weather.setText(self.data[:].replace('Follow @igor_chubin for wttr.in updates', ''))
+            if not self.place_in_file["place"]:
+                self.place.setPlaceholderText('Введите место')
+            else:
+                self.data = get('+'.join(self.place_in_file["place"].split()))
+                self.place.setPlaceholderText(self.place_in_file["place"])
+                self.Weather.setText(self.data[:].replace('Follow @igor_chubin for wttr.in updates', ''))
 
 if __name__ == '__main__':
     hi()
