@@ -32,4 +32,4 @@ SIMPLEWEATHER/
 - main.py
 - console_v.py
 ## main.py - основная программа с UI
-## simple_weather_console.py - консольная программа
+## console_v.py - консольная программа
