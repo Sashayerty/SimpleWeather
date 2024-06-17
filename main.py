@@ -5,8 +5,6 @@ from PyQt5 import uic
 from data.get_weather import get_weather as get
 from data.simple_weather_action import simple_weather_action as hi
 from templates.weather import weather
-from PyQt5.QtCore import Qt
-from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 class SimpleWeatherWindow(QMainWindow):
